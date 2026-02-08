@@ -1,0 +1,84 @@
+/* Variáveis de cores baseadas na paleta escolhida */
+:root {
+    --deep-ocean: #003C5E;
+        --bold-berry: #7C141D;
+            --velvet-glow: #F0E6CC;
+                --soft-mist: #B3B3B3;
+                    --dark-bg: #0a0a0a;
+                    }
+
+                    body {
+                        background-color: var(--dark-bg);
+                            color: var(--velvet-glow);
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                    margin: 0;
+                                        display: flex;
+                                            flex-direction: column;
+                                                align-items: center;
+                                                }
+
+                                                header {
+                                                    text-align: center;
+                                                        padding: 2rem;
+                                                            border-bottom: 2px solid var(--bold-berry);
+                                                                width: 100%;
+                                                                }
+
+                                                                .badge {
+                                                                    background-color: var(--bold-berry);
+                                                                        padding: 2px 8px;
+                                                                            font-size: 0.8rem;
+                                                                                border-radius: 4px;
+                                                                                }
+
+                                                                                main {
+                                                                                    display: grid;
+                                                                                        grid-template-columns: 1fr 1fr; /* Divide em duas colunas */
+                                                                                            gap: 20px;
+                                                                                                max-width: 900px;
+                                                                                                    margin-top: 30px;
+                                                                                                        padding: 20px;
+                                                                                                        }
+
+                                                                                                        .card {
+                                                                                                            background-color: var(--deep-ocean);
+                                                                                                                padding: 20px;
+                                                                                                                    border-radius: 12px;
+                                                                                                                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+                                                                                                                            border-left: 5px solid var(--bold-berry);
+                                                                                                                            }
+
+                                                                                                                            .input-group {
+                                                                                                                                margin-bottom: 15px;
+                                                                                                                                }
+
+                                                                                                                                label { display: block; margin-bottom: 5px; color: var(--soft-mist); }
+
+                                                                                                                                input {
+                                                                                                                                    width: 90%;
+                                                                                                                                        padding: 10px;
+                                                                                                                                            border-radius: 5px;
+                                                                                                                                                border: none;
+                                                                                                                                                    background-color: var(--velvet-glow);
+                                                                                                                                                    }
+
+                                                                                                                                                    button {
+                                                                                                                                                        background-color: var(--bold-berry);
+                                                                                                                                                            color: white;
+                                                                                                                                                                border: none;
+                                                                                                                                                                    padding: 10px 20px;
+                                                                                                                                                                        border-radius: 5px;
+                                                                                                                                                                            cursor: pointer;
+                                                                                                                                                                                font-weight: bold;
+                                                                                                                                                                                    transition: 0.3s;
+                                                                                                                                                                                    }
+
+                                                                                                                                                                                    button:hover {
+                                                                                                                                                                                        background-color: #a01a26;
+                                                                                                                                                                                            transform: scale(1.05);
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            #display-result {
+                                                                                                                                                                                                font-size: 1.2rem;
+                                                                                                                                                                                                    line-height: 1.6;
+                                                                                                                                                                                                    }
